@@ -58,25 +58,24 @@ cacheSolve <- function(x, ...) {
 
 ## 1.  Caching inverse valuse of number 5 (= 1/5 = 0.2) 
 ## cacheSolve(makeCacheMatrix(5))
+##
 ## Result: 
 ## [,1]
 ## [1,]  0.2
 
 ## 2. Caching inverse valuse of 2x2 matrix
-## cacheSolve(makeCacheMatrix(matrix (1:4, nrow = 2, ncol = 2)))
-## Result: 
-## [,1] [,2]
-## [1,]   -2  1.5
-## [2,]    1 -0.5
-
+##
 ## t<- makeCacheMatrix(matrix (1:4, nrow = 2, ncol = 2))
 ## cacheSolve(t)
+##
 ## Result:
 ## [,1] [,2]
 ## [1,]   -2  1.5
 ## [2,]    1 -0.5
+##
 ## Run again: 
 ## cacheSolve(t)
+##
 ## Result: 
 ## getting cached data
 ## [,1] [,2]
